@@ -1,0 +1,72 @@
+:root {
+    --main_color: #3d64e6;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--main_color);
+}
+.container {
+    background-color: #ffffff;
+    width: 80vw;
+    max-width: 37.5em;
+    padding: 3em 2.5em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 0.62em;
+    box-shadow: 0 1.25em 1.8em rgba(8, 21, 65, 0.25);
+}
+.container .search-wrapper {
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap: 1.25em;
+}
+.search-wrapper button {
+    font-size: 1em;
+    background-color: var(--main_color);
+    color: #ffffff;
+    padding: 0.8em 0;
+    border: none;
+    border-radius: 1.5em;
+    cursor: pointer;
+}
+.search-wrapper input {
+    font-size: 1em;
+    padding: 0 0.62em;
+    border: none;
+    border-bottom: 2px solid var(--main_color);
+    outline: none;
+    color: #222a43;
+}
+.result {
+    position: relative;
+    margin-top: 1.25em;
+}
+.container .result .flag-img {
+    display: block;
+    width: 45%;
+    min-width: 7.5em;
+    margin: 1.8em auto 1em;
+    border: 1px solid #e5e5e5;
+}
+.container .result .country-name {
+    position: absolute;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.container .result .info_div {
+    margin-top: 5em;
+    line-height: 2;
+    font-family: sans-serif;
+}
+
+
